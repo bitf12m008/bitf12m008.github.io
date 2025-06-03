@@ -2,9 +2,9 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "com.precor.fitness",
+    "package_name": "com.precor.takemydata",
     "sha256_cert_fingerprints": [
-      "76:F3:7A:21:FA:2C:DB:77:B3:D0:7A:BF:8B:23:F9:02:AC:6E:CD:F2:14:D9:E2:66:3D:9F:53:31:3D:2C:CF:A8"
+      "36:90:A3:3B:6D:C1:6E:BC:7A:74:FC:4A:C1:EE:97:1D:35:5F:0F:0D:75:3C:02:32:F3:8F:B3:49:85:BA:54:EC"
     ]
   }
 }]
