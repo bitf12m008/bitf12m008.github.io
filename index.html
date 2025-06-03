@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0;url=myapp://open" />
+  <title>Redirecting...</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>
+    function redirectBasedOnPlatform() {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      if (/android/i.test(userAgent)) {
+        // Android: redirect to Play Store
+        window.location.href = "https://play.google.com/store/apps/details?id=com.precor.takemydata";
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        // iOS: redirect to App Store (replace with your App Store URL if available)
+        window.location.href = "https://apps.apple.com/app/id1234567890";
+      } else {
+        // Other (desktop, unknown): show fallback or stay on the page
+        document.getElementById("message").innerText =
+          "Please open this link on your mobile device to install or launch the app.";
+      }
+    }
+
+    // Delay to allow Android to open app first if installed
+    setTimeout(redirectBasedOnPlatform, 1500);
+  </script>
 </head>
 <body>
-    <p>Launching app...</p>
-    <a href="myapp://open">Click here if not redirected</a>
+  <p id="message">Redirecting to the app store...</p>
 </body>
 </html>
