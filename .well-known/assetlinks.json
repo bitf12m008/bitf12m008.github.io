@@ -1,10 +1,22 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "com.precor.takemydata",
-    "sha256_cert_fingerprints": [
-      "36:90:A3:3B:6D:C1:6E:BC:7A:74:FC:4A:C1:EE:97:1D:35:5F:0F:0D:75:3C:02:32:F3:8F:B3:49:85:BA:54:EC"
-    ]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.precor.takemydata",
+      "sha256_cert_fingerprints": [
+        "36:90:A3:3B:6D:C1:6E:BC:7A:74:FC:4A:C1:EE:97:1D:35:5F:0F:0D:75:3C:02:32:F3:8F:B3:49:85:BA:54:EC"
+      ]
+    }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.precor.takemydata",
+      "sha256_cert_fingerprints": [
+        "66:C3:22:75:0B:5F:BA:A4:C0:C9:5C:9B:49:BB:37:75:85:68:42:CC:6D:9F:3F:73:CE:15:7B:5C:04:E7:BF:5A"
+      ]
+    }
   }
-}]
+]
